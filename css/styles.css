@@ -325,6 +325,7 @@ header{
     display: inline-block;
     font-weight: 800;
     font-size: 25px;
+    padding-bottom: 20px;
 }
 
 .explanation__paragraph{
@@ -883,25 +884,27 @@ header{
     .header__img{
         justify-content: center;
     }
-    .hero__complete{
-        padding-top: 30px;
-        padding-bottom: 30px;
+    .hero__complete {
+        padding-top: 80px;
+        padding-bottom: 80px;
         grid-template-columns: 1fr;
         gap: 20px;
         height: auto;
     }
-    .hero__title{
-        font-size: 45px;
+    .hero__title {
+        font-size: 50px;
         text-align: center;
-        padding: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
-    .hero__paragraph{
+    .hero__paragraph {
         text-align: center;
-        font-size: 18px;
+        font-size: 20px;
         padding: 20px;
     }
     .hero__textspace{
         align-items: center;
+        gap: 20px;
     }
     .hero__imgspace{
         display: none;
@@ -910,11 +913,14 @@ header{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 1fr);
     }
-    .main-card{
-        padding-top: 0px;
+    .main-card {
+        padding-left: 15px;
+        padding-right: 15px;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        row-gap: 50px;
+        row-gap: 30px;
+        column-gap: 0px;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
     .main-card__complete{
         grid-column: 1;
@@ -923,8 +929,76 @@ header{
         padding-bottom: 0px;
     }
     .main-card__title{
-        font-size: 40px;
+        font-size: 35px;
         text-align: center;
         padding: 20px;
+    }
+    .main-card__allexplanations{
+        flex-direction: column;
+    }
+    .main-card__paragraph{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .callout__complete {
+        flex-direction: column;
+        padding: 20px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+        gap: 45px;
+    }
+    .work-with-me {
+        gap: 25px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 30px;
+    }
+    .work-with-me__complete{
+        grid-column: 1;
+    }
+    .work-with-me__add{
+        grid-column: 1;
+        grid-row: 5/6;
+    }
+    .work-with-me__card{
+        grid-column: 1;
+    }
+    .convertir{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        }
+    .convertir__title{
+        font-size: 35px;
+    }
+    .convertir__btn{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px;
+    }
+    .footer__textspace {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 60px;
+    }
+    .footer__imgspace{
+        justify-content: center;
+    }
+    .footer__rights{
+        padding-top: 50px;
+        text-align: center;
     }
 }
