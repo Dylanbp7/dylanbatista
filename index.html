@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="fixed-top">
         <nav class="navbar navbar-expand-lg header__nav">
             <div class="container">
-            <img class="navbar-brand nav__img" src="./images/Perfile-2.png" alt="">
+            <img class="navbar-brand nav__img" src="../images/Perfile-2.png" alt="">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -25,7 +25,7 @@
                 <li class="nav-item">
                     <a class="nav-link active nav__item" aria-current="page" href="#">Inicio</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown nav__item">
                     <a class="nav-link active dropdown-toggle nav__item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Servicios
                     </a>
@@ -35,21 +35,17 @@
                     <li><a class="dropdown-item nav__subitem" href="./pages/asesoramiento.html">Asesoramiento</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active nav__item" aria-current="page" href="./pages/recursos.html">Recursos</a>
+                <li class="nav-item nav__item">
+                    <a class="nav-link active nav__item" aria-current="page" href="./pages/contacto.html">Contacto</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown nav__item">
                     <a class="nav-link active dropdown-toggle nav__item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Sobre mí
                     </a>
                     <ul class="dropdown-menu">
                     <li><a class="dropdown-item nav__subitem" href="./pages/sobre-mi.html">Información</a></li>
                     <li><a class="dropdown-item nav__subitem" href="./pages/certificaciones.html">Certificaciones</a></li>
                     <li><a class="dropdown-item nav__subitem" href="https://www.behance.net/dylanbatista" target="_blank">Proyectos</a></li>
-                    <li><a class="dropdown-item nav__subitem" href="https://www.linkedin.com/in/dylanbatista/" target="_blank">LinkedIn</a></li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active nav__item" aria-current="page" href="./pages/contacto.html">Contacto</a>
                 </li>
                 </ul>
             </div>
@@ -62,7 +58,9 @@
                 <div class="hero__textspace">
                     <h1 class="hero__title">Empieza a Convertir tu Negocio al Mundo Digital</h1>
                     <p class="hero__paragraph">Ingresa ahora de manera <strong>100% gratuita</strong> a la Masterclass que te ayudará a incursionar con tu negocio en el mundo digital, para alcanzar a más personas y multiplicar tus ventas.</p>
-                    <a class="btn btn-primary btn-lg" href="./pages/masterclass-1.html">Ingresar a la Masterclass</a>
+                    <button class="btn btn-primary">
+                        <a class="boton" href="./pages/masterclass-1.html">Ingresar a la Masterclass</a>
+                    </button>
                 </div>
                 <div class="hero__imgspace">
                     <img class="hero__img" src="./images/Perfile-2.png" alt="foto de perfil">
@@ -103,7 +101,9 @@
                     <h2 class="explanation__title">Diseñando tu imagen de marca e ideando estrategías para atraer más clientes</h2>
                     <p class="explanation__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eos ratione illum saepe ipsa atque totam, tempore in, nesciunt, aperiam error mollitia dolor dignissimos eum cumque quae. Nihil, rerum.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eos ratione illum saepe ipsa atque totam, tempore in, nesciunt, aperiam error mollitia dolor dignissimos eum cumque quae. Nihil, rerum.</p>
-                    <a class="btn" href="./pages/redes-sociales.html">Ver más</a>
+                    <button class="btn btn-primary">
+                        <a class="boton" href="./pages/redes-sociales.html">Ver más</a>
+                    </button>
                 </div>
                 <div class="main-card__explanation">
                     <div class="services__service">
@@ -113,7 +113,9 @@
                     <h2 class="explanation__title">Creando tu sitio en línea para que puedas vender tus productos/servicios sin intermediarios</h2>
                     <p class="explanation__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eos ratione illum saepe ipsa atque totam, tempore in, nesciunt, aperiam error mollitia dolor dignissimos eum cumque quae. Nihil, rerum.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eos ratione illum saepe ipsa atque totam, tempore in, nesciunt, aperiam error mollitia dolor dignissimos eum cumque quae. Nihil, rerum.</p>
-                    <a class="btn" href="./pages/pagina-web.html">Ver más</a>
+                    <button class="btn btn-primary">
+                        <a class="boton" href="./pages/pagina-web.html">Ver más</a>
+                    </button>
                 </div>
                 <div class="main-card__explanation">
                     <div class="services__service">
@@ -123,20 +125,24 @@
                     <h2 class="explanation__title">Despejando tus dudas para que puedas escalar tu negocio y vender mucho más</h2>
                     <p class="explanation__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eos ratione illum saepe ipsa atque totam, tempore in, nesciunt, aperiam error mollitia dolor dignissimos eum cumque quae. Nihil, rerum.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eos ratione illum saepe ipsa atque totam, tempore in, nesciunt, aperiam error mollitia dolor dignissimos eum cumque quae. Nihil, rerum.</p>
-                    <a class="btn" href="./pages/asesoramiento.html">Ver más</a>
+                    <button class="btn btn-primary">
+                        <a class="boton" href="./pages/asesoramiento.html">Ver más</a>
+                    </button>
                 </div>
             </div>
         </section>
         <section class="callout">
             <div class="callout__complete">
                 <p class="callout__title"> <strong> ¿Lo mejor? Podés elegir TODAS las opciones,</strong> <br> o la que más se adapte a lo que HOY necesitas.</p>
-                <a class="btn3 callout__anchor" href="./pages/contacto.html">Quiero saber más</a>
+                <button class="btn btn-light">
+                    <a class="btn3" href="./pages/contacto.html">Quiero saber más</a>
+                </button>
             </div>
         </section>
-        <section class="work-with-me">
-            <div class="work-with-me__complete">
+        <section class="main-card">
+            <div class="main-card__complete">
                 <h2 class="main-card__title">Preguntas frecuentes</h2>
-                <p class="main-card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic amet exercitationem vitae vero temporibus, nesciunt inventore? Autem, quos sit! Animi, hic nostrum exercitationem corrupti ea voluptatem provident adipisci. Quas!</p>
+                <p class="main-card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero omnis aspernatur beatae porroquod cumque, minus ea, veritatis quo neque sit. Sapiente, quis? Excepturi magni ex deserunt dolorum!</p>
             </div> 
             <div class="accordion" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item">
@@ -184,8 +190,12 @@
                     <p class="convertir__paragraph">Dá hoy el primer paso para convertir tu negocio tradicional al mundo digital.</p>
                 </div>
                 <div class="convertir__btn" >
-                    <a class="btn3" href="./pages/contacto.html">Empezar ahora</a>
-                    <a class="btn4" href="https://wa.me/2604371637" target="_blank">Hablar con un asesor</a>
+                    <button class="btn btn-light">
+                        <a class="btn3" href="./pages/contacto.html">Empezar ahora</a>
+                    </button>
+                    <button class="btn btn-outline-primary">
+                        <a class="btn4" href="https://wa.me/2604371637" target="_blank">Hablar con un asesor</a>
+                    </button>
                 </div>
             </div>
         </section>
@@ -200,18 +210,15 @@
             </div>
             <div class="footer__textspace">
                     <h4 class="formspace__legend">Servicios</h4>
-                    <a class="group__item" href="./pages/precios.html">Marketing Digital</a>
-                    <a class="group__item" href="./pages/precios.html">Diseño UX</a>
-                    <a class="group__item" href="./pages/precios.html">Diseño UI</a>
-                    <a class="group__item" href="./pages/precios.html">Auditorías</a>
-                    <a class="group__item" href="./pages/precios.html">Consultorías</a>
+                    <a class="group__item" href="./pages/redes-sociales.html">Impulsa tus redes sociales</a>
+                    <a class="group__item" href="./pages/pagina-web.html">Crea tu propia página web</a>
+                    <a class="group__item" href="./pages/asesoramiento.html">Asesoramiento</a>
             </div>
             <div class="footer__textspace">
                     <h4 class="formspace__legend">Social Media</h4>
                     <a class="group__item" href="https://www.instagram.com/dylanbattipas/" target="_blank">Instagram</a>
                     <a class="group__item" href="https://www.linkedin.com/in/dylanbattipas/" target="_blank">LinkedIn</a>
-                    <a class="group__item" href="https://twitter.com/dylanbattipas" target="_blank">Twitter</a>
-                    <a class="group__item" href="https://www.behance.net/dylanbattipas" target="_blank">Behance</a>
+                    <a class="group__item" href="https://www.youtube.com/channel/UCeOwzkBRYXhCnEJyxQ8jg-A" target="_blank">YouTube</a>
             </div>
             <div class="footer__imgspace">
                 <img class="imgspace__img" src="./images/Perfile-2.png" alt="Foto de perfil">

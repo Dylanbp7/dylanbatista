@@ -1,0 +1,293 @@
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.aside__primmary{
+    background-color: #F2F2F2;
+    margin-top: 75px;
+}
+
+.aside__secondary{
+    background-color: #F2F2F2;
+    margin-top: 75px;
+}
+
+.header__nav {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav__img {
+    width: 50px;
+    margin-right: 0;
+}
+
+.header__list{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 0;
+}
+
+.nav__item{
+    font-weight: 600;
+    color: white !important;
+    padding-left: 20px;
+}
+
+.nav__subitem{
+    font-weight: 400;
+    color: black;
+}
+
+.hero2{
+    background-color: #B1DFDB;
+}
+
+.hero2__complete{
+    max-width: 1200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero2__title{
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom:0;
+    padding-top: 0;
+}
+
+.hero2__paragraph{
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom:0;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.videomasterclass{
+    position: relative;
+    top: -80px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-mc {
+    display: flex;
+    justify-content: center;
+}
+
+.video1-mc{
+    border-radius: 10px;
+}
+
+.explicacion{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+}
+
+.texto__explicacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.carrusel__explicacion{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.procesos-de-servicios{
+    display: flex;
+    background-color: #B1DFDB;
+    height: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.procesos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 50px;
+}
+
+.precios {
+    margin-top: 100px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.precios__complete {
+    max-width: 1200px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.precios__title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.precios__cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.precio1 {
+    grid-row: 2;
+    max-width: 350px;
+}
+
+.card-title{
+    font-weight: 600;
+}
+.card__item{
+    padding-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+    .hero2__title {
+        padding-left: 150px;
+        padding-right: 150px;
+        font-size: 50px;
+    }
+    .video1-mc{
+        max-width: 650px;
+    }
+    .procesos {
+        max-width: 700px;
+        gap: 30px;
+        padding: 30px;
+    }
+    .procesos-de-servicios{
+        height: auto;
+    }
+    .explicacion {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .carrusel__explicacion{
+        justify-content: center;
+        max-width: 900px;
+    }
+    .precios{
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .precio1{
+        max-width: 200px;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .nav__item{
+        padding-left: 0px;
+    }
+    .hero2{
+    margin-top: 110px;
+    }
+    .hero2__title {
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 40px;
+    }
+    .hero2__paragraph {
+        font-size: 15px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .hero2__complete {
+        max-width: 1200px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .videomasterclass {
+        position: unset;
+        top: -200px;
+    }
+    .video1-mc {
+        max-width: 280px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 0px;
+    }
+    .texto__explicacion{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .procesos {
+        flex-direction: column;
+        gap: 30px;
+        max-width: 300px;
+    }
+    .explicacion{
+        grid-template-columns: 100%;
+    }
+    .carrusel__explicacion{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .procesos-de-servicios {
+        height: auto;
+        margin-top: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-bottom: 20px;
+    }
+    .precios{
+        padding: 20px;
+        margin-top: 30px;
+        height: auto;
+    }
+    .precios__title{
+        gap: 20px;
+    }
+    .precio1{
+        grid-row: auto;
+    }
+    .precios__cards{
+        gap: 30px;
+    }
+}
