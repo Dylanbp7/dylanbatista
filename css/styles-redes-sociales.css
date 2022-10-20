@@ -284,8 +284,9 @@
     .precios__title{
         gap: 20px;
     }
-    .precio1{
+    .precio1 {
         grid-row: auto;
+        max-width: 300px;
     }
     .precios__cards{
         gap: 30px;

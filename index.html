@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -92,7 +94,8 @@
                 <h2 class="main-card__title">¿Cómo puedo ayudarte?</h1>
                 <p class="main-card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero omnis aspernatur beatae porroquod cumque, minus ea, veritatis quo neque sit. Sapiente, quis? Excepturi magni ex deserunt dolorum!</p>
             </div> 
-            <div class="main-card__allexplanations">   
+            <div class="main-card__allexplanations" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">   
                 <div class="main-card__explanation">
                     <div class="services__service">
                         <img class="service__img" src="./images/marketing_digital.png" alt="Marketing Digital">
@@ -184,7 +187,7 @@
             </div>
         </section>
         <section class="cta">
-            <div class="convertir">
+            <div class="convertir" data-aos="flip-down">
                 <div class="convertir__complete">
                     <h2 class="convertir__title">¿Estás listo para empezar?</h2>
                     <p class="convertir__paragraph">Dá hoy el primer paso para convertir tu negocio tradicional al mundo digital.</p>
@@ -229,5 +232,8 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

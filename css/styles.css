@@ -108,8 +108,6 @@ header{
 }
 
 .hero3__img{
-    position: absolute;
-    top: 450px;
     display: grid;
     gap: 40px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -239,13 +237,25 @@ header{
 }
 
 .masterclass {
-    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 50px;
     padding-bottom: 30px;
 }
 
+.videomasterclass{
+    position: relative;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-mc{
+    padding-bottom: 20px;
+}
 
 .video-btn{
     display: flex;
@@ -292,6 +302,7 @@ header{
 /* MAIN CARD */
 
 .main-card {
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -529,6 +540,7 @@ header{
 
 .cta{
     background-color: #00A595;
+    overflow: hidden;
 }
 
 .convertir{
@@ -597,13 +609,14 @@ header{
 }
 
 .sub-hero3 {
+    max-width: 1200px;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 1fr auto;
     gap: 20px;
-    padding-top: 1000px;
-    padding-left: 350px;
-    padding-right: 350px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 50px;
 }
 
