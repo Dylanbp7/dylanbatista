@@ -5,36 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dylan Batista | Diseñador Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="shortcut icon " href="./images/Perfile-2.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <nav class="header__nav">
-            <div class="header__img">
-                <img class="nav__img" src="./images/Perfile-2.png" alt="foto de perfil">
-            </div>
-            <div class="header__list">
-                <ul> 
-                    <li class="nav__item"><a class="nav__anchor" href="#">Inicio</a></li>
-                    <li class="nav__item"><a class="nav__anchor" href="./pages/servicios.html">Servicios</a></li>
-                    <li class="nav__item"><a class="nav__anchor"href="./pages/recursos.html">Recursos</a></li>
-                    <li class="nav__item"><a class="nav__anchor" href="./pages/sobre-mi.html">Sobre mí</a></li>
-                    <li class="nav__item"><a class="nav__anchor" href="./pages/contacto.html">Contacto</a></li>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg header__nav">
+            <div class="container">
+            <img class="navbar-brand nav__img" src="../images/Perfile-2.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse header__list" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active nav__item" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item dropdown nav__item">
+                    <a class="nav-link active dropdown-toggle nav__item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Servicios
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item nav__subitem" href="./pages/redes-sociales.html">Impulsa tus redes sociales</a></li>
+                    <li><a class="dropdown-item nav__subitem" href="./pages/pagina-web.html">Crea tu página web</a></li>
+                    <li><a class="dropdown-item nav__subitem" href="./pages/asesoramiento.html">Asesoramiento</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item nav__item">
+                    <a class="nav-link active nav__item" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item dropdown nav__item">
+                    <a class="nav-link active dropdown-toggle nav__item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Sobre mí
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item nav__subitem" href="./pages/sobre-mi.html">Información</a></li>
+                    <li><a class="dropdown-item nav__subitem" href="./pages/certificaciones.html">Certificaciones</a></li>
+                    <li><a class="dropdown-item nav__subitem" href="https://www.behance.net/dylanbatista" target="_blank">Proyectos</a></li>
+                    </ul>
+                </li>
                 </ul>
-            </div>     
+            </div>
+            </div>
         </nav>
     </header>
     <main class="aside__primmary">
         <section class="hero">
             <div class="hero__complete">
                 <div class="hero__textspace">
-                    <h1 class="hero__title">Convierte tu negocio <BR> al mundo digital</h1>
-                    <p class="hero__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero omnis aspernatur beatae porroquod cumque, minus ea, veritatis quo neque sit. Sapiente, quis? Excepturi magni ex deserunt dolorum!</p>
-                    <a class="btn" href="./pages/servicios.html">Ver planes</a>
+                    <h1 class="hero__title">Empieza a Convertir tu Negocio al Mundo Digital</h1>
+                    <p class="hero__paragraph">Ingresa ahora de manera <strong>100% gratuita</strong> a la Masterclass que te ayudará a incursionar con tu negocio en el mundo digital, para alcanzar a más personas y multiplicar tus ventas.</p>
+                    <button class="btn btn-primary">
+                        <a class="boton" href="./pages/masterclass-1.html">Ingresar a la Masterclass</a>
+                    </button>
                 </div>
                 <div class="hero__imgspace">
                     <img class="hero__img" src="./images/Perfile-2.png" alt="foto de perfil">
@@ -44,8 +72,8 @@
         <section class="banner">
             <div class="banner__complete">
                 <div class="banner___title">
-                <a class="title__color" href="./pages/certificaciones.html">Avalado y certificado</a>
-                <p>por las empresas más importantes del sector:</p>
+                <a class="title__color" href="./pages/certificaciones.html">Conocimiento certificado</a>
+                <span>por las empresas más importantes del sector:</span>
                 </div>
                 <div class="banner__logos">
                 <img src="./images/LinkedIn_Logo 1.png" alt="">
@@ -66,7 +94,8 @@
                 <h2 class="main-card__title">¿Cómo puedo ayudarte?</h1>
                 <p class="main-card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero omnis aspernatur beatae porroquod cumque, minus ea, veritatis quo neque sit. Sapiente, quis? Excepturi magni ex deserunt dolorum!</p>
             </div> 
-            <div class="main-card__allexplanations">   
+            <div class="main-card__allexplanations" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">   
                 <div class="main-card__explanation">
                     <div class="services__service">
                         <img class="service__img" src="./images/marketing_digital.png" alt="Marketing Digital">
@@ -75,7 +104,9 @@
                     <h2 class="explanation__title">Diseñando tu imagen de marca e ideando estrategías para atraer más clientes</h2>
                     <p class="explanation__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eos ratione illum saepe ipsa atque totam, tempore in, nesciunt, aperiam error mollitia dolor dignissimos eum cumque quae. Nihil, rerum.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eos ratione illum saepe ipsa atque totam, tempore in, nesciunt, aperiam error mollitia dolor dignissimos eum cumque quae. Nihil, rerum.</p>
-                    <a class="btn" href="./pages/redes-sociales.html">Ver más</a>
+                    <button class="btn btn-primary">
+                        <a class="boton" href="./pages/redes-sociales.html">Ver más</a>
+                    </button>
                 </div>
                 <div class="main-card__explanation">
                     <div class="services__service">
@@ -85,7 +116,9 @@
                     <h2 class="explanation__title">Creando tu sitio en línea para que puedas vender tus productos/servicios sin intermediarios</h2>
                     <p class="explanation__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eos ratione illum saepe ipsa atque totam, tempore in, nesciunt, aperiam error mollitia dolor dignissimos eum cumque quae. Nihil, rerum.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eos ratione illum saepe ipsa atque totam, tempore in, nesciunt, aperiam error mollitia dolor dignissimos eum cumque quae. Nihil, rerum.</p>
-                    <a class="btn" href="./pages/pagina-web.html">Ver más</a>
+                    <button class="btn btn-primary">
+                        <a class="boton" href="./pages/pagina-web.html">Ver más</a>
+                    </button>
                 </div>
                 <div class="main-card__explanation">
                     <div class="services__service">
@@ -95,80 +128,77 @@
                     <h2 class="explanation__title">Despejando tus dudas para que puedas escalar tu negocio y vender mucho más</h2>
                     <p class="explanation__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eos ratione illum saepe ipsa atque totam, tempore in, nesciunt, aperiam error mollitia dolor dignissimos eum cumque quae. Nihil, rerum.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eos ratione illum saepe ipsa atque totam, tempore in, nesciunt, aperiam error mollitia dolor dignissimos eum cumque quae. Nihil, rerum.</p>
-                    <a class="btn" href="./pages/asesoramiento.html">Ver más</a>
+                    <button class="btn btn-primary">
+                        <a class="boton" href="./pages/asesoramiento.html">Ver más</a>
+                    </button>
                 </div>
             </div>
         </section>
         <section class="callout">
             <div class="callout__complete">
                 <p class="callout__title"> <strong> ¿Lo mejor? Podés elegir TODAS las opciones,</strong> <br> o la que más se adapte a lo que HOY necesitas.</p>
-                <a class="btn3 callout__anchor" href="./pages/contacto.html">Quiero saber más</a>
+                <button class="btn btn-light">
+                    <a class="btn3" href="./pages/contacto.html">Quiero saber más</a>
+                </button>
             </div>
         </section>
-        <section class="work-with-me">
-            <div class="work-with-me__complete">
+        <section class="main-card">
+            <div class="main-card__complete">
                 <h2 class="main-card__title">Preguntas frecuentes</h2>
-                <p class="main-card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic amet exercitationem vitae vero temporibus, nesciunt inventore? Autem, quos sit! Animi, hic nostrum exercitationem corrupti ea voluptatem provident adipisci. Quas!</p>
+                <p class="main-card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero omnis aspernatur beatae porroquod cumque, minus ea, veritatis quo neque sit. Sapiente, quis? Excepturi magni ex deserunt dolorum!</p>
             </div> 
-            <div class="work-with-me__card">
-                <div class="work-with-me__title">
-                    <h4 class="service__title">¿Por qué trabajar con Dylan?</h4>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button fondopreguntas" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        ¿Por qué trabajar con Dylan?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                    <strong>Lorem ipsum dolor sit amet</strong> consectetur adipisicing elit. Porro ducimus ad eligendi iste rem tempora adipisci totam qui cupiditate, eos inventore dolor impedit culpa beatae, et eaque provident aspernatur nostrum.
+                    </div>
                 </div>
-                <div>
-                    <h2 class="explanation__title">Porque contamos con experiencia en el tema</h2>
-                    <p class="explanation__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eos ratione illum saepe ipsa atque totam, tempore in, nesciunt, aperiam error mollitia dolor dignissimos eum cumque quae. Nihil, rerum.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eos ratione illum saepe ipsa atque totam, tempore in, nesciunt, aperiam error mollitia dolor dignissimos eum cumque quae. Nihil, rerum.</p>
                 </div>
-            </div>
-            <div class="work-with-me__add">
-                <div class="work-with-me__title">
-                    <h4 class="service__title">Proyectos realizados</h4>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    ¿Cuánto cuesta el servicio?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                    <strong>Lorem ipsum dolor sit amet</strong> consectetur adipisicing elit. Porro ducimus ad eligendi iste rem tempora adipisci totam qui cupiditate, eos inventore dolor impedit culpa beatae, et eaque provident aspernatur nostrum.
+                    </div>
                 </div>
-                <div>
-                    <h2 class="explanation__title">Priorizando calidad</h2>
-                    <a class="link" href="https://www.behance.net/dylanbatista" target="_blank">Haz click aquí</a>
-                    <span class="explanation__paragraph">para ver mis últimos proyectos.</span>
                 </div>
-                <div class="portfolio__proyecto">
-                    <img class="portfolio__img" src="./images/landing page saldo.jpg" alt="">
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    ¿Cómo es el proceso?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                    <strong>Lorem ipsum dolor sit amet</strong> consectetur adipisicing elit. Porro ducimus ad eligendi iste rem tempora adipisci totam qui cupiditate, eos inventore dolor impedit culpa beatae, et eaque provident aspernatur nostrum.
+                    </div>
                 </div>
-                <div class="portfolio__proyecto">
-                    <img class="portfolio__img" src="./images/app coder.jpg" alt="">
-                </div>
-                <div class="portfolio__proyecto">
-                    <img class="portfolio__img" src="./images/dashboard.jpg" alt="">
-                </div>
-            </div>
-            <div class="work-with-me__card">
-                <div class="work-with-me__title">
-                    <h4 class="service__title">¿Cuanto cuesta el servicio?</h4>
-                </div>
-                <div>
-                    <h2 class="explanation__title">Deja que haga un análisis de tu negocio y te diga lo que puedes mejorar</h2>
-                    <p class="explanation__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eos ratione illum saepe ipsa atque totam, tempore in, nesciunt, aperiam error mollitia dolor dignissimos eum cumque quae. Nihil, rerum.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eos ratione illum saepe ipsa atque totam, tempore in, nesciunt, aperiam error mollitia dolor dignissimos eum cumque quae. Nihil, rerum.</p>
-                </div>
-            </div>
-            <div class="work-with-me__card">
-                <div class="work-with-me__title">
-                    <h4 class="service__title">¿Cómo es el proceso?</h4>
-                </div>
-                <div>
-                    <h2 class="explanation__title">Deja que haga un análisis de tu negocio y te diga lo que puedes mejorar</h2>
-                    <p class="explanation__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eos ratione illum saepe ipsa atque totam, tempore in, nesciunt, aperiam error mollitia dolor dignissimos eum cumque quae. Nihil, rerum.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eos ratione illum saepe ipsa atque totam, tempore in, nesciunt, aperiam error mollitia dolor dignissimos eum cumque quae. Nihil, rerum.</p>
                 </div>
             </div>
         </section>
         <section class="cta">
-            <div class="convertir">
+            <div class="convertir" data-aos="flip-down">
                 <div class="convertir__complete">
                     <h2 class="convertir__title">¿Estás listo para empezar?</h2>
                     <p class="convertir__paragraph">Dá hoy el primer paso para convertir tu negocio tradicional al mundo digital.</p>
                 </div>
                 <div class="convertir__btn" >
-                    <a class="btn3" href="./pages/contacto.html">Empezar ahora</a>
-                    <a class="btn4" href="https://wa.me/2604371637" target="_blank">Hablar con un asesor</a>
+                    <button class="btn btn-light">
+                        <a class="btn3" href="./pages/contacto.html">Empezar ahora</a>
+                    </button>
+                    <button class="btn btn-outline-primary">
+                        <a class="btn4" href="https://wa.me/2604371637" target="_blank">Hablar con un asesor</a>
+                    </button>
                 </div>
             </div>
         </section>
@@ -183,18 +213,15 @@
             </div>
             <div class="footer__textspace">
                     <h4 class="formspace__legend">Servicios</h4>
-                    <a class="group__item" href="./pages/precios.html">Marketing Digital</a>
-                    <a class="group__item" href="./pages/precios.html">Diseño UX</a>
-                    <a class="group__item" href="./pages/precios.html">Diseño UI</a>
-                    <a class="group__item" href="./pages/precios.html">Auditorías</a>
-                    <a class="group__item" href="./pages/precios.html">Consultorías</a>
+                    <a class="group__item" href="./pages/redes-sociales.html">Impulsa tus redes sociales</a>
+                    <a class="group__item" href="./pages/pagina-web.html">Crea tu propia página web</a>
+                    <a class="group__item" href="./pages/asesoramiento.html">Asesoramiento</a>
             </div>
             <div class="footer__textspace">
                     <h4 class="formspace__legend">Social Media</h4>
                     <a class="group__item" href="https://www.instagram.com/dylanbattipas/" target="_blank">Instagram</a>
                     <a class="group__item" href="https://www.linkedin.com/in/dylanbattipas/" target="_blank">LinkedIn</a>
-                    <a class="group__item" href="https://twitter.com/dylanbattipas" target="_blank">Twitter</a>
-                    <a class="group__item" href="https://www.behance.net/dylanbattipas" target="_blank">Behance</a>
+                    <a class="group__item" href="https://www.youtube.com/channel/UCeOwzkBRYXhCnEJyxQ8jg-A" target="_blank">YouTube</a>
             </div>
             <div class="footer__imgspace">
                 <img class="imgspace__img" src="./images/Perfile-2.png" alt="Foto de perfil">
@@ -204,5 +231,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
