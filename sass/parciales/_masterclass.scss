@@ -1,0 +1,14 @@
+.masterclass{
+    position: relative;
+    top: -80px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    &__video{
+        display: flex;
+        justify-content: center;
+    }
+    &__video1{
+        border-radius: 10px;
+    }
+}

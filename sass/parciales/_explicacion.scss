@@ -1,0 +1,22 @@
+.explicacion{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    &__texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    &__carrusel{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}

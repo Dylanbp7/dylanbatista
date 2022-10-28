@@ -281,7 +281,7 @@ header{
     margin-right: auto;
 }
 
-.banner___title{
+.banner__title{
     font-size: 18px;
     text-align: center;
     font-weight: 600;
@@ -301,7 +301,7 @@ header{
 
 /* MAIN CARD */
 
-.main-card {
+.faq {
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
@@ -898,6 +898,12 @@ header{
         padding-right: 30px;
         gap: 20px;
     }
+}
+
+.contacto__form{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen and (max-width: 768px) {
