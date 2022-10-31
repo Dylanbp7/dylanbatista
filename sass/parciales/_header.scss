@@ -27,5 +27,34 @@
         font-weight: 400;
         color: black;
     }
-
+    .navbar-toggler-icon {
+        background-color: white;
+        border-radius: 5px;
+        transform: scale(1.29);
+    }
+    @media screen and (max-width: 1024px){
+        &__nav{
+            max-width: 900px;
+        }
+        &__item{
+            padding-left: 0px;
+        }
+    }
+    @media screen and (max-width: 768px){
+        &__item{
+            padding-left: 0px;
+        }
+    }
+    @media screen and (max-width: 320px){
+        &__item{
+            padding-left: 0px;
+        }
+        &__nav{
+            grid-template-columns: 1fr;
+            padding: 25px;
+        }
+        &__img{
+            justify-content: center;
+        }
+    }
 }

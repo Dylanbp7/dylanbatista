@@ -8,15 +8,17 @@
     &__texto{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         padding-left: 50px;
         padding-right: 50px;
     }
-    &__carrusel{
+    &__imgspace{
         display: flex;
         align-items: center;
-        width: 100%;
-        padding-left: 50px;
         padding-right: 50px;
+    }
+    &__img{
+        width: 100%;
     }
 }

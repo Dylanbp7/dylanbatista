@@ -97,4 +97,67 @@
         border: none;
         text-decoration: none;
     }
+    @media screen and (max-width: 1024px){
+        .services{
+            max-width: 950px;
+        }
+        &__paragraph{
+            font-size: 15px;
+            text-align: center;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        &__cards{
+            display: flex;
+            gap: 30px;
+        }
+    }
+    @media screen and (max-width: 768px){
+        .services{
+            padding: 20px;
+            max-width: 720px;
+        }
+        &__paragraph {
+            font-size: 15px;
+            text-align: center;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        &__cards{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    @media screen and (max-width: 320px){
+        .services{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        &__servicio{
+            max-height: 30px;
+        }
+        &__descripciones{
+            max-width: 300px;
+            max-height: 600px;
+        }
+        &__complete{
+            justify-content: center;
+            padding-bottom: 0px;
+            margin-bottom: 20px;
+        }
+        &__title{
+            font-size: 35px;
+            text-align: center;
+        }
+        &__cards{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__paragraph {
+            padding-left: 0;
+            padding-right: 0;
+            margin-bottom: 0;
+        }
+    }
 }

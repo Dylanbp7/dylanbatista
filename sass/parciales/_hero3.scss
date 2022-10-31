@@ -1,0 +1,15 @@
+.hero3{
+    background-color: #B1DFDB;
+    &__complete{
+        background-color: #B1DFDB;
+        max-width: 1200px;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__img{
+        width: 85%;
+    }
+}

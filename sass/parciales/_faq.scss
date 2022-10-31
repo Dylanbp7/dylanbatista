@@ -28,4 +28,18 @@
         padding-left: 20%;
         padding-right: 20%;
     }
+    @media screen and (max-width: 320px){
+        &{
+            max-width: 300px;
+            padding-top: 0;
+        }
+        &__title{
+            font-size: 35px;
+            text-align: center;
+        }
+        &__paragraph{
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    }
 }
