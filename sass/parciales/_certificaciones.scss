@@ -1,0 +1,80 @@
+.certificaciones{
+    max-width: 1200px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 70px;
+    border: none;
+    &__diploma{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+        width: 350px;
+        height: auto;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.18);
+    }
+    &__title{
+        font-family: Inter, sans-serif;
+        font-weight: 600;
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    &__paragraph{
+        font-size: 17px;
+    }
+    &__img{
+        width: 100%;
+        border-radius: 15px;
+    }
+    .btn{
+        background-color: #00A595;
+        display: inline-block;
+        color: white;
+        font-weight: 600;
+        padding: 20px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: none;
+    }
+    
+    .btn:hover{
+        background-color: #058679;
+        display: inline-block;
+        color: white;
+        font-weight: 600;
+        border: none;
+        text-decoration: none;
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.08);
+    }
+    .boton{
+        color: white;
+        border: none;
+        text-decoration: none;
+    }
+    @media screen and (max-width: 768px) {
+        &{
+            max-width: 740px;
+            grid-template-columns: 1fr 1fr;
+        }
+        &__diploma{
+            max-width: 350px;
+        }
+    }
+    @media screen and (max-width: 320px) {
+        &{
+            max-width: 300px;
+            grid-template-columns: auto;
+        }
+        &__diploma{
+            max-width: 300px;
+        }
+    }
+}

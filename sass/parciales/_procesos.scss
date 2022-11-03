@@ -1,0 +1,59 @@
+.procesos{
+    display: flex;
+    flex-direction: column;
+    background-color: #B1DFDB;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &__title{
+        display: flex;
+        font-weight: 600;
+        font-size: 50px;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    &__complete{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 50px;
+    }
+    .card-title{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    &__cards{
+        height: 145px;
+        display: flex;
+    }
+    @media screen and (max-width: 768px) {
+        &__complete{
+            max-width: 720px;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        &__cards{
+            height: 180px;
+        }
+    }
+    @media screen and (max-width: 320px) {
+        & {
+            gap: 30px;
+            max-width: 320px;
+            margin-bottom: 30px;
+        }
+        &__complete{
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+        &__title{
+            text-align: center;
+            font-size: 45px;
+            padding-bottom: 0;
+        }
+    }
+}

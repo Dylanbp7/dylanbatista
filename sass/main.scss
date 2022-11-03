@@ -1,0 +1,30 @@
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* INDEX */
+@import "./parciales/header";
+@import "./parciales/main-content";
+@import "./parciales/hero";
+@import "./parciales/banner";
+@import "./parciales/services";
+@import "./parciales/callout";
+@import "./parciales/testimonios";
+@import "./parciales/faq";
+@import "./parciales/cta";
+@import "./parciales/footer";
+
+/* SERVICIOS */
+@import "./parciales/hero2";
+@import "./parciales/masterclass";
+@import "./parciales/explicacion";
+@import "./parciales/procesos";
+@import "./parciales/precios";
+@import "./parciales/warnings";
+@import "./parciales/formulario";
+@import "./parciales/thankyoupage";
+@import "./parciales/certificaciones";
+
+

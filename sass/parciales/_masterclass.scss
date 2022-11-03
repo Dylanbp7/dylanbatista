@@ -1,0 +1,14 @@
+.masterclass{
+    max-width: 900px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    &__video{
+        display: flex;
+        justify-content: center;
+    }
+    &__video1{
+        border-radius: 10px;
+    }
+}
