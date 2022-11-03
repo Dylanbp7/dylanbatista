@@ -1,20 +1,29 @@
+@mixin padding-laterales ($padding-left, $padding-right) {
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+}
+@mixin margin-laterales ($margin-left, $margin-right) {
+    margin-left: $margin-left;
+    margin-right: $margin-right;
+}
+@mixin gap ($gap) {
+    gap: $gap;
+}
 .hero{
     background-color: #B1DFDB;
     &__complete{
-        background-color: #B1DFDB;
         max-width: 1200px;
         height: 730px;
         display: grid;
         grid-template-columns: 60% 40%;
-        margin-left: auto;
-        margin-right: auto;
+        @include margin-laterales(auto, auto)
     }
     &__textspace{
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: flex-start;
-        gap: 20px;
+        @include gap(20px)
     }
     &__title{
         font-weight: 800;
@@ -76,9 +85,8 @@
             padding: 0;
         }
         &__complete {
-            padding: 20px;
+            @include padding-laterales(20px, 20px);
             grid-template-columns: 1fr;
-            gap: 20px;
             height: auto;
             padding-bottom: 50px;
             padding-top: 70px;
@@ -96,7 +104,7 @@
         }
         &__textspace{
             align-items: center;
-            gap: 20px;
+            @include gap(20px)
         }
         &__imgspace{
             display: none;

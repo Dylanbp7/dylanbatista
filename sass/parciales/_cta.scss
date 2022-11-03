@@ -8,8 +8,7 @@
         max-width: 1200px;
         padding-top: 150px;
         padding-bottom: 150px;
-        margin-left: auto;
-        margin-right: auto;
+        @include margin-laterales (auto, auto);
     }
     &__text{
         display: flex;
@@ -28,8 +27,7 @@
         color: white;
         text-align: center;
         font-size: 18px;
-        padding-left: 30%;
-        padding-right: 30%;
+        @include padding-laterales (30%, 30%);
     }
     &__btn{
         display: flex;
@@ -83,8 +81,7 @@
         &__paragraph{
             font-size: 15px;
             text-align: center;
-            padding-left: 5%;
-            padding-right: 5%;
+            @include padding-laterales (5%, 5%);
         }
         &__cards{
             display: flex;
@@ -99,8 +96,7 @@
         &__paragraph {
             font-size: 15px;
             text-align: center;
-            padding-left: 5%;
-            padding-right: 5%;
+            @include padding-laterales (5%, 5%);
         }
         &__cards{
             display: flex;
@@ -110,8 +106,7 @@
     }
     @media screen and (max-width: 320px){
         &{
-            padding-left: 30px;
-            padding-right: 30px;
+            @include padding-laterales (30px, 30px);
         }
         &__complete{
         max-width: 300px;

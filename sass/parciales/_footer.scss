@@ -9,8 +9,7 @@
         grid-template-rows: 70% 15% 15%;
         justify-content: space-around;
         padding-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
+        @include margin-laterales (auto, auto);
         padding-bottom: 50px;
     }
     &__name{
