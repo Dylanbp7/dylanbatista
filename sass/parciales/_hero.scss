@@ -3,7 +3,7 @@
     &__complete{
         background-color: #B1DFDB;
         max-width: 1200px;
-        height: 710px;
+        height: 730px;
         display: grid;
         grid-template-columns: 60% 40%;
         margin-left: auto;
@@ -27,6 +27,9 @@
     &__anchor{
         text-decoration: none;
         color: black;
+    }
+    .modal-dialog{
+        top: 300px;
     }
     .btn{
         background-color: #00A595;

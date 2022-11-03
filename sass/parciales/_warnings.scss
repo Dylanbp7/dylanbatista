@@ -3,17 +3,16 @@
     padding-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
     &__cards{
         display: flex;
         justify-content: center;
-        gap: 50px;
+        gap: 30px;
     }
     &__pagos{
         max-width: 450px;
     }
     .card-body{
-        background-color: #F2F2F2;
+        background-color: #B1DFDB;
         border: solid var(--bs-card-border-width) 1px;
         border-radius: 5px;
     }

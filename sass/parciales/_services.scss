@@ -4,13 +4,12 @@
     flex-wrap: wrap;
     flex-direction: column;
     max-width: 1200px;
-    padding-top: 50px;
     padding-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     &__complete{
         display: flex;
-        gap: 20px;
+        gap: 25px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -23,24 +22,25 @@
         margin-bottom: 0;
     }
     &__paragraph{
-        font-size: 15px;
+        font-size: 17px;
         text-align: center;
         padding-left: 20%;
         padding-right: 20%;
     }
     &__cards{
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         max-width: 1200px;
         gap: 30px;
     }
     &__descripciones{
         padding: 15px;
-        max-height: 500px;
+        max-height: 550px;
+        width: 400px;
         display: flex;
         background-color: white;
         border-radius: 20px;
-        justify-content: space-between;
+        justify-content: flex-start;
         gap: 20px;
         flex-direction: column;
         align-items: flex-start;
@@ -48,7 +48,7 @@
     }
     &__servicio{
         background-color: #B1DFDB;
-        height: 60px;
+        height: 30px;
         width: 100%;
         border-radius: 10px;
         padding-left: 20px;
@@ -97,21 +97,6 @@
         border: none;
         text-decoration: none;
     }
-    @media screen and (max-width: 1024px){
-        .services{
-            max-width: 950px;
-        }
-        &__paragraph{
-            font-size: 15px;
-            text-align: center;
-            padding-left: 5%;
-            padding-right: 5%;
-        }
-        &__cards{
-            display: flex;
-            gap: 30px;
-        }
-    }
     @media screen and (max-width: 768px){
         .services{
             padding: 20px;
@@ -127,10 +112,16 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        &__descripciones{
+            width: 100%;
         }
     }
     @media screen and (max-width: 320px){
         .services{
+            max-width: 300px;
             padding-left: 10px;
             padding-right: 10px;
         }
@@ -139,25 +130,27 @@
         }
         &__descripciones{
             max-width: 300px;
-            max-height: 600px;
+            max-height: 700px;
         }
         &__complete{
-            justify-content: center;
+            justify-content: flex-start;
             padding-bottom: 0px;
             margin-bottom: 20px;
         }
         &__title{
-            font-size: 35px;
-            text-align: center;
+            font-size: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
         }
         &__cards{
             flex-direction: column;
             align-items: center;
         }
         &__paragraph {
-            padding-left: 0;
-            padding-right: 0;
+            padding-left: 20px;
+            padding-right: 20px;
             margin-bottom: 0;
+            text-align: start;
         }
     }
 }
