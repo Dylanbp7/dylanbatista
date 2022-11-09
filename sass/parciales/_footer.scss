@@ -94,13 +94,13 @@
             gap: 20px;
         }
     }
-    @media screen and (max-width: 320px){
+    @media screen and (max-width: 425px){
         &{
             height: 850px;
             padding: 50px;
         }
         &__complete{
-            max-width: 300px;
+            max-width: 100%;
             grid-template-columns: 1fr;
             grid-template-rows: auto;
             justify-content: space-between;

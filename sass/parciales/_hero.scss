@@ -80,12 +80,13 @@
             max-width: 720px;
         }
     }
-    @media screen and (max-width: 320px){
+    @media screen and (max-width: 425px){
         .hero{
             padding: 0;
         }
         &__complete {
             @include padding-laterales(20px, 20px);
+            width: 100%;
             grid-template-columns: 1fr;
             height: auto;
             padding-bottom: 50px;

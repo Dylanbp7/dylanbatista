@@ -38,8 +38,9 @@
             gap: 20px;
         }
     }
-    @media screen and (max-width: 320px){
+    @media screen and (max-width: 425px){
         .callout__complete {
+            max-width: 100%;
             flex-direction: column;
             padding: 20px;
             @include padding-laterales (50px, 50px);

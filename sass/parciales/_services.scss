@@ -98,7 +98,7 @@
     @media screen and (max-width: 768px){
         .services{
             padding: 20px;
-            max-width: 720px;
+            max-width: 100%;
         }
         &__paragraph {
             font-size: 15px;
@@ -116,9 +116,9 @@
             width: 100%;
         }
     }
-    @media screen and (max-width: 320px){
+    @media screen and (max-width: 425px){
         .services{
-            max-width: 300px;
+            max-width: 100%;
             padding-left: 10px;
             padding-right: 10px;
         }
@@ -126,7 +126,7 @@
             max-height: 30px;
         }
         &__descripciones{
-            max-width: 300px;
+            max-width: 100%;
             max-height: 700px;
         }
         &__complete{
