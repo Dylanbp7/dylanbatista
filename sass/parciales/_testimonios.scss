@@ -35,7 +35,7 @@
     }
     &__caso{
         padding: 20px;
-        width: 100%;
+        width: 500px;
         display: flex;
         background-color: white;
         border-radius: 20px;
@@ -78,22 +78,23 @@
             overflow: hidden;
         }
         &__complete{
-            align-items: flex-start;
-            max-width: 100%;
+            align-items: center;
+            max-width: 300px;
         }
         &__title{
+            text-align: center;
             font-size: 35px;
-            @include padding-laterales (20px, 20px);
         }
         &__paragraph{
             font-size: 15px;
-            text-align: start;
-            @include padding-laterales (20px, 20px);
+            text-align: center;
+            padding-left: 10%;
+            padding-right: 10%;
         }
         &__cards{
-            max-width: 100%;
+            max-width: 300px;
             justify-content: center;
-            @include padding-laterales (20px, 20px);
+            @include padding-laterales (10px, 10px);
             gap: 30px;
         }
         &__caso{
