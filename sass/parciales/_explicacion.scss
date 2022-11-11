@@ -41,12 +41,11 @@
         & {
             max-width: 100%;
             grid-template-columns: 1fr;
-            gap: 50px;
+            gap: 30px;
             padding-left: 20px;
             padding-right: 20px;
         }
         &__img{
-            padding-top: 20px;
             max-width: 100%;
             margin-bottom: 40px;
         }
@@ -60,12 +59,12 @@
             padding-bottom: 0px;
         }
         &__img{
-            padding-top: 20px;
             max-width: 100%;
             margin-bottom: 40px;
         }
         &__texto{
             max-width: 100%;
+            margin-bottom: 20px;
         }
     }
 }

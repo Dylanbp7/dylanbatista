@@ -38,16 +38,20 @@
     }
     @media screen and (max-width: 768px) {
         & {
-            max-width: 720px;
-        }
-    }
-    @media screen and (max-width: 320px) {
-        &{
-            max-width: 300px;
+            max-width: 100%;
         }
         &__complete{
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    @media screen and (max-width: 425px) {
+        &{
+            max-width: 100%;
+        }
+        &__complete{
+            padding-left: 20px;
+            padding-right: 20px;
         }
         &__name{
             flex-direction: column;
