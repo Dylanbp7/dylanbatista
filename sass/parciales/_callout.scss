@@ -26,7 +26,8 @@
     }
     @media screen and (max-width: 1024px){
         .callout__complete {
-            max-width: 900px;
+            max-width: 100%;
+            @include padding-laterales (50px, 50px);
         }
         &__title{
             font-size: 22px;

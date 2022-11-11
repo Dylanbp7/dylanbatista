@@ -31,11 +31,17 @@
     &__anchor{
         text-decoration: none;
     }
+    @media screen and (max-width: 1024px){
+        &{
+            max-width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
     @media screen and (max-width: 768px) {
         &{
             max-width: 720px;
         }
-
     }
     @media screen and (max-width: 425px){
         &{
@@ -46,6 +52,7 @@
         &__title{
             font-size: 35px;
             @include padding-laterales (20px, 20px);
+            text-align: center;
         }
         &__paragraph{
             @include padding-laterales (20px, 20px);

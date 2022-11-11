@@ -44,14 +44,25 @@
         &__item{
             padding-left: 0px;
         }
+        .navbar-nav .dropdown-menu{
+            background-color: black;
+        }
+        &__subitem{
+            font-weight: 600;
+            color: rgb(209, 209, 209) !important;
+        }
     }
     @media screen and (max-width: 425px){
         &__item{
             padding-left: 0px;
         }
         &__nav{
+            max-width: 100%;
             grid-template-columns: 1fr;
-            padding: 25px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 25px;
+            padding-right: 25px;
         }
         &__img{
             justify-content: center;

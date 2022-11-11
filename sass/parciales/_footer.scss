@@ -82,19 +82,14 @@
         margin-bottom: 0;
     }
     @media screen and (max-width: 1024px){
-        .footer{
+        &{
+            max-width: 100%;
             padding-left: 100px;
             padding-right: 30px;
             gap: 20px;
         }
     }
     @media screen and (max-width: 768px){
-        &__complete{
-            max-width: 720px;
-            gap: 20px;
-        }
-    }
-    @media screen and (max-width: 425px){
         &{
             height: 850px;
             padding: 50px;
